@@ -222,5 +222,8 @@ footer a{
    font-size: calc(--p-fs - 1vw);
    --subheader-fs: 1rem;
   }
-  
+  .navbar-brand img{
+    width: 28vw;
+    border-radius: 100px;
+  }
  
