@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  :root{
+    --nav-color: #607d8b;
+    --header-color: #5c433a;
+    --header-ff: 'georgia', serif;
+    --subheader-ff: 'Poppins', sans-serif;
+    --p-ff: 'Poppins', sans-serif;
+    --footer-ff: 'Work Sans', sans-serif;
+    --header-fs: 1.5rem;
+    --subheader-fs: 1.2rem;
+    --p-fs: 0.8rem;
+    --footer-fs: 0.8rem;
+    --line-height: 1rem;
+  }
+
+body {
+ overflow-y: scroll;
+ cursor: pointer;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/*-----------------------header--------------------------------*/
+.nav-link{
+    text-decoration: none;
+    color:var(--nav-color);
+    font-weight: bold;
+    font-family: var(--header-ff);
+    font-size:var(--subheader-fs);
+  }
+  
+  .navbar a:hover {
+      color: var(--subheader-color);
+      font-weight: bold;
+      font-family: var(--header-ff);
+      transition: color 0.5s ease-in;
+    }
+  
+  .navbar-brand img{
+    width: 50vw;
+    border-radius: 100px;
+  }
+  
+/*end header*/
+ .recipes{
+        background: #99ccff;
+        border-radius: 15px;
+        
+      }
+      #list{
+        background: #ffffff;
+        list-style-type: none;
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 15px;
+        text-align: left;
+        column-count: 3;
+        column-gap: 2px;
+        column-rule: 1px solid lightgrey;
+      }
+
+      #list li a{
+        padding: 12px;
+        text-decoration: none;
+        color: black;
+        display: block;
+        font-family: sans-serif;
+        font-style: oblique;
+
+      }
+    #list a:hover{
+        background-color: #40c2d3;
+      }
+      h1{
+        text-align: center;
+        font-family: cursive;
+        color:#361A00;
+      }
+      #mySearch {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 14px;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--footer-bg-color);
+    padding: 1rem;
+    text-align: center;
+    line-height: var(--line-height);
+    font-family: var(--footer-ff);
+    font-size: var(--footer-fs);
+    
+  }
+  footer a{
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  @media(max-width:767.99px){
+    body{
+     font-size: calc(--p-fs - 1vw);
+     
+    }
+  
+    .navbar-brand img{
+      width: 70vw;
+      border-radius: 100px;
+    }
+}
