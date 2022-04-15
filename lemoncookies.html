@@ -29,41 +29,47 @@
 
 	  <link rel="icon" type="image/ico" href="img/favicon.ico" >
 </head>
-<body>
-	<main>
+<body class="bg-light">
 		<header>
 			<div><a class="navbar-brand" href="index.html"><img src="img/LOGOWEB.png" alt="Ivanscakes" class="mx-auto d-block p-3"/></a></div>
-		   <nav class="navbar navbar-expand-md navbar-light bg-light p-1 mb-3">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		   <nav class="navbar navbar-expand-md navbar-dark bg-dark p-1 mb-3">
+			<button class="navbar-toggler p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
 			  <div class="collapse navbar-collapse" id="navbarmenu">
-			  <ul class="navbar-nav mx-auto">
+			  <ul class="navbar-nav mx-auto text-center">
+			  <li class="nav-item"><a class="nav-link pl-2" href="index.html">Home</a></li>
 			  <li class="nav-item"><a class="nav-link pl-2" href="recipe-list.html" target="_blank">List of recipes</a></li>
-			  <li class="nav-item"><a class="nav-link pl-2" href="about.html">About</a></li>
 			  <li class="nav-item"><a class="nav-link pl-2" href="#contact">Contact</a></li>
 			</ul>
 			</div>
 			  </nav>
 		  </header>
-		<div class="container">
-			<div class="recipe-img">
+	<div class="container-fluid col-sm-12 col-md-12 bg-light">
+		<!------------------------------ main image----------------------------->
+		<div class="row">
+			<div class="recipe-img col-10 mx-auto">
 				<img src="img/Lemoncookies.jpg" alt="Lemon cookie">
 			</div>
-			<div class="the-recipe">
-				<div class="ul-recipe">
-				<h2>Ingredients<img src="img/icon-cook.png" alt="cooking icon" class="icon-cook"></h2>
-				<ul id="ingredients">
+		</div>
+			<div class="row">
+		<div class="recipes col-sm-12 col-md-12 bg-light mt-4 border-top d-flex">
+			<div class="ul-recipe col-sm-12 col-md-5">
+		<h2>Ingredients</h2>
+		<ul id="ingredients" class="ingredients bg-secondary p-2 rounded-3">
 		<li><input type="checkbox" id="myCheck" onclick="myFunction()">Sugar (Azucar) 250gr</li>
 		<li><input type="checkbox" id="myCheck" onclick="myFunction()">Egg white (Clara de huevo) 2 eggs</li>
 		<li><input type="checkbox" id="myCheck" onclick="myFunction()">Grained almond (Almendra molida)</li>
 		<li><input type="checkbox" id="myCheck" onclick="myFunction()">Powdered sugar (Azucar glas)</li>
 		<li><input type="checkbox" id="myCheck" onclick="myFunction()">Lemon (Limon) 1 lemon</li>
-	</ul>
-</div>
-<div class="ul-recipe">
-	<h2>Preparations</h2>
-	<ul id="instructions">
+		</ul>
+			</div>
+			<div>
+			<img src="img/icon-cook.webp" alt="cooking icon" class="icon-cook pe-3">
+			</div>
+		<div class="ul-recipe col-sm-12 col-md-5">
+		<h2>Preparations</h2>
+		<ol id="instructions" class="instructions p-4 rounded-3">
 		<li>Mix the egg white till it is white</li>
 		<li>Add Sugar and a little of lemon juice</li>
 		<li>Mix all till its firm</li>
@@ -71,10 +77,11 @@
 		<li>Add the grained almond</li>
 		<li>Mix with your hand and make a ball, put it in the fridge for 30 min</li>
 		<li>Prepar the oven on 160ºC, cut the dough to forms and put in the oven for 15 min</li>
-	</ul>
-</div>
+		</ol>
+		</div>
+		</div>
 <button id="print"onclick="window.print()"><img src="img/printer.png"></button>
-	</div>
+			</div>
 	<p id="your-rating">Your Rating</p>
 	<fieldset class="rate">
 <input type="radio" id="star5" name="rate1" value="5" />
@@ -89,14 +96,15 @@
 <label for="star1" title="Do not try this!">1 star</label>
 </fieldset>
 </div>
-</main>
-<footer>
+<!-----------------------------footer---------------------------->
+<footer class="footer col-12 bg-dark text-white text-center p-2">
 	<p>ivanscakes@gmail.com</p>
- <p>&copy; 2022 Ivanscakes all rights reserved.<p>
-	 <p>Alt Emporda, Girona</p>
-	 <p>#pastry #desert #cakes #bread</p>
-	  <p><a href="privacy-policy.html">Privacy Policy</a><a href="Cookie-Policy.html">Cookie Policy</a></p>
-</footer>
+	<p>&copy; 2022 Ivanscakes all rights reserved.</p>
+	<p>Alt Emporda, Girona</p>
+	<p>#pastry #desert #cakes #bread</p>
+	<p><a href="privacy-policy.html">Privacy Policy</a><a href="Cookie-Policy.html">Cookie Policy</a>
+	</p>
+  </footer>
 </body>
 
 </html>
